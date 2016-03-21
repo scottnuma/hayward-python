@@ -11,12 +11,6 @@ I defined functions below of various names. Each have a "string" immediately
 below the "def function_name():" statement. These strings are supposed to show
 what Python would print if it ran the commands after the ">>>"
 
-For example if you typed "3 + 5" into Python's interactive mode it would like
-the following
-
->>> 3 + 5
-8
-
 The line immediately following the ">>>" shows the result. Your job will be to
 make sure the command (the stuff after >>>) and the result (the next line) is 
 accurate.
@@ -24,30 +18,48 @@ accurate.
 To check your work run the file (F5) - Don't worry when you get hit with a massive
 wall of text. You'll probably see something like this:
 
+				(Move text would be output above the following in IDLE)
+
 				**********************************************************************
-where in file:	File "intro.py", line 26, in __main__.type_checker
+which function:	File "python_lesson_one.py", line 72, in __main__.p_type_checker
 				Failed example:
-what line was:	    type(3) == 
+which line:		    type(94) ==
 				Exception raised:
 				    Traceback (most recent call last):
-				      File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/doctest.py", line 1318, in __run
-				        compileflags, 1), test.globs)
-				      File "<doctest __main__.type_checker[0]>", line 1
-				        type(3) ==
- 				                 ^
-specific error:	    SyntaxError: invalid syntax
+				      File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/doctest.py", line 1315, in __run
+				        compileflags, 1) in test.globs
+				      File "<doctest __main__.p_type_checker[4]>", line 1
+				        type(94) ==
+				                   ^
+Specific error:	    SyntaxError: invalid syntax
 				**********************************************************************
+				15 items had failures:
+Progress on		   3 of   3 in __main__.a_print_if_odd
+each of the		   4 of   4 in __main__.b_repeat
+functions		   4 of   4 in __main__.c_print_multiples
+				   3 of   3 in __main__.d_print_up_to
+				   6 of   6 in __main__.e_school
+				   3 of   3 in __main__.f_num_sides
+				   3 of   3 in __main__.g_worthy_of_the_sword
+				   2 of   2 in __main__.h_total_cost_of_lunch
+				   3 of   3 in __main__.i_area_of_rectangle
+				   3 of   3 in __main__.j_minutes_to_seconds
+				   2 of   2 in __main__.k_triangle_length
+				   3 of   3 in __main__.l_feet_to_inches
+				   6 of   6 in __main__.n_division
+				   3 of   7 in __main__.o_evaluating_functions
+				   9 of  13 in __main__.p_type_checker
+				***Test Failed*** 57 failures.
+				all done
 
 This just means you either haven't answered a question yet or answered it
 incorrectly. Only the first error will show up per function - if you get stuck
 you can always just erase that question or comment it out with # (more on
 that at the end)
-
-Note that the first questions you answer will have their results at the top
 """
 from operator import add, sub, mul
 
-def type_checker():
+def p_type_checker():
 	"""This sections checks your understanding of data types. We covered three
 	types: int (short for integer), float (what I called decimal), and 
 	str (short for string). On the following lines fill in what each data 
@@ -98,7 +110,7 @@ def type_checker():
 	"""
 	print "Nice!"
 
-def evaluating_functions():
+def o_evaluating_functions():
 	"""This is a quick check on evaluating functions. 
 
 	Quick refresher on functions:
@@ -144,7 +156,7 @@ def evaluating_functions():
 	"""
 	print "kewl"
 
-def division():
+def n_division():
 	"""So far, we've used addition, subtraction, and multiplication - not 
 	division.
 	Division gives different results depending on the data types of the 
@@ -182,14 +194,14 @@ def division():
 	print "aight" 
 
 
-def creating_functions():
+def m_creating_functions():
 	"""In this next part you're going to be making your own functions.
 	Instead of changing these really long strings, you'll be writing below 
 	them. The next couple functions I've completed for you
 	"""
 	print "Got it"
 
-def feet_to_inches(num_feet):
+def l_feet_to_inches(num_feet):
 	"""Converts feet in to inches. Notice that we don't always have to name
 	our functions f, and their arguments x and y
 
@@ -206,7 +218,7 @@ def feet_to_inches(num_feet):
 	"""
 	return num_feet * 12
 
-def triangle_length(side1, side2):
+def k_triangle_length(side1, side2):
 	"""Calculates the longest side of a right triangle, given the other lengths
 
 	>>> triangle_length(3,4)
@@ -217,7 +229,7 @@ def triangle_length(side1, side2):
 	"""
 	return (side1**2 + side2**2)**.5
 
-def minutes_to_seconds(num_minutes):
+def j_minutes_to_seconds(num_minutes):
 	"""Converts minutes into seconds
 	>>> minutes_to_seconds(1)
 	60
@@ -230,7 +242,7 @@ def minutes_to_seconds(num_minutes):
 	"""
 	"ERASE THIS LINE AND REPLACE WITH YOURS"
 
-def area_of_rectangle(side1, side2):
+def i_area_of_rectangle(side1, side2):
 	"""Calculates area of a rectangle given side lengths
 	>>> area_of_rectangle(3,4)
 	12
@@ -241,7 +253,7 @@ def area_of_rectangle(side1, side2):
 	"""
 	"ERASE THIS LINE AND REPLACE WITH YOURS"
 
-def total_cost_of_lunch(num_burgers):
+def h_total_cost_of_lunch(num_burgers):
 	"""Calculates cost of getting a given amount of burgers
 	>>> total_cost_of_lunch(1)
 	5
@@ -267,7 +279,7 @@ def total_cost_of_lunch(num_burgers):
 # a Boolean can only be True or False, but many other expressions evaluate
 # to Booleans, as shown on the website.
 
-def worthy_of_the_sword(name):
+def g_worthy_of_the_sword(name):
 	"""Determines if a person is worthy of the sword
 	>>> worthy_of_the_sword("Merlin")
 	False
@@ -281,7 +293,7 @@ def worthy_of_the_sword(name):
 	else:
 		return False
 
-def num_sides(shape):
+def f_num_sides(shape):
 	"""Returns the number of sides of given shape
 	>>> num_sides("square")
 	4
@@ -292,7 +304,7 @@ def num_sides(shape):
 	"""
 	"REPLACE THIS LINE WITH YOUR CODE"
 
-def school(grade):
+def e_school(grade):
 	"""Returns the current school level as a string
 	>>> school(3)
 	"elementary"
@@ -317,7 +329,7 @@ def school(grade):
 # Check out section 1.5.6 to to learn how to use while statements
 # http://composingprograms.com/pages/15-control.html#conditional-statements
 
-def print_up_to(top_num):
+def d_print_up_to(top_num):
 	"""Counts up to a given number
 
 	This is an example I wrote for you, marked with my comments
@@ -356,7 +368,7 @@ def print_up_to(top_num):
 	# when python finishes reading your function, it will actually return
 	# None, another special Data Type
 
-def print_multiples(num, times):
+def c_print_multiples(num, times):
 	"""Prints multiples of num a certain number of times
 	Another example for you
 	>>> print_multiples(4, 3)
@@ -384,7 +396,7 @@ def print_multiples(num, times):
 		# Increase our counter to avoid infinite recursion
 		counter = counter + 1
 
-def repeat(word, num_times):
+def b_repeat(word, num_times):
 	"""Prints a string (word) a certain number of times
 	>>> repeat("beep", 3)
 	beep
@@ -405,7 +417,7 @@ def repeat(word, num_times):
 	"""
 	"REPLACE WITH YOUR CODE HERE"
 
-def print_if_odd(top):
+def a_print_if_odd(top):
 	"""Prints numbers 0 to top inclusive, but only if each number is odd
 	You can check if a number is odd with the modulus operator: %
 	It returns the remainder from doing division. Thus 
