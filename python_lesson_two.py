@@ -41,13 +41,13 @@ def what_are_lists():
 
 	>>> undertale = 
 	>>> undertale[0]
-	"Sans"
+	'Sans'
 	>>> undertale[2]
-	"Flowey"
+	'Flowey'
 	>>> undertale[1]
-	"Papyrus"
+	'Papyrus'
 	>>> undertale[5]
-	"Asgore"
+	'Asgore'
 
 	Each of these act like variables - you can read them (as shown above)
 	but also reassign them and use them in functions
@@ -64,7 +64,7 @@ def what_are_lists():
 	>>> i_heard_you_like_lists[0][2]
 	3
 	>>> i_heard_you_like_lists[1][1]
-	"defend"
+	'defend'
 
 	Lists also have some useful functions pre-made
 
@@ -208,11 +208,11 @@ def combine_strings(lst):
 
 	>>> sentence = ["Are", "you", "feeling", "it", "now", "Mr.", "Krabs"]
 	>>> combine_strings(sentence)
-	"Are you feeling it now Mr. Krabs"
+	'Are you feeling it now Mr. Krabs'
 
 	>>> quote = ["Luke,", "I", "am", "your", "father"]
-	>>> combine_strins(quote)
-	"Luke, I am your father"
+	>>> combine_strings(quote)
+	'Luke, I am your father'
 	"""
 	"Write your code here"
 
@@ -229,13 +229,19 @@ def combine_num_or_string(lst):
 
 	>>> sentence = ["Are", "you", "feeling", "it", "now", "Mr.", "Krabs"]
 	>>> combine_num_or_string(sentence)
-	"Are you feeling it now Mr. Krabs"
+	'Are you feeling it now Mr. Krabs'
 
 	>>> primes = [2, 3, 5, 8]
 	>>> combine_num_or_string(primes)
 	18
 	"""
 	"Write your code here"
+
+if __name__ == "__main__":
+    import doctest
+
+    doctest.testmod(optionflags=doctest.REPORT_ONLY_FIRST_FAILURE)
+    print "Tested"
 	
 
 
