@@ -3,6 +3,20 @@
   ________________________/ O  \___/
  <_/_\_/_\_/_\_/_\_/_\_/_______/   \ 
 
+ HOW TO USE:
+ 1. You've followed the link to view this file on your web browser already
+ 	- ctrl-s to save the file to whereever you're doing you python
+ 2. Open up IDLE which you installed when you installed Python
+ 	- You'll now see Interactive Python
+ 	- This window however isn't running this file
+ 3. In the top bar tabs of IDLE, click "File", "Open" and open up this file
+ 	- You should now see the text of this file in IDLE
+ 	- You can now save and edit this file to complete it (y)
+ 4. Let's test that everything is working by running the file
+ 	- In the top bar tabs of IDLE, click "Run", "Run Module" (or hit F5)
+ 	- You should see a window of Python open up (or a new Python shell)
+ 	- A big wall of text that looks like the below stuff with *******
+
 If you need help, ask a friend or shoot me an email: scott.numamoto@pioneers.berkeley.edu
 Or facebook/text if that's your thing. If this takes more than an hour and you 
 can't finish, don't worry about it.
@@ -109,6 +123,9 @@ def p_type_checker():
 	True
 	"""
 	print "Nice!"
+
+# Before you go on, have you checked your work by running the file?
+# See the top for instructions
 
 def o_evaluating_functions():
 	"""This is a quick check on evaluating functions. 
@@ -322,12 +339,30 @@ def e_school(grade):
 	"REPLACE THIS LINE WITH YOUR CODE"
 
 # Nice almost to the end - one last topic iteration
-# This allows programmers (that's you) to be lazy... err efficient
+# This allows programmers to be efficient
 # Say you want to want to print every number 0 to 10
 # You call the print keyword on each int - but that's a lot of typing
 # Instead we'll use iteration with the while clause
 # Check out section 1.5.6 to to learn how to use while statements
 # http://composingprograms.com/pages/15-control.html#conditional-statements
+
+def dz_variables():
+	"""This is a check on your understanding of variables
+
+	You'll just need to fill in the right side of some >>> lines
+	such that it reflects what Python would've printed.
+
+	>>> num = 5
+	>>> num ==
+	True
+	>>> num + 
+	6
+	>>> num ==
+	True
+	>>> num = num + 2
+	>>> num ==
+	True
+	"""
 
 def d_print_up_to(top_num):
 	"""Counts up to a given number
