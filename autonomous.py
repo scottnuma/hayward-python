@@ -69,7 +69,20 @@ def turn_radians(radians):
 def travel_in_square():
 	"""The robot travels in a square with side length of 1 yd
 
-	Make sure to reuse your previous functions where possible
+	This is a good example in which Abstraction can play a powerful role.
+	You could program using the PIE-given API, but what if our mechanical crew
+	decides to change to completely change how the robot moves? Or, what if
+	you'd like to reuse this code next year?
+
+	If for some reason, the code needed to move forward changes, using only
+	our own defined functions will allow us to easily update the changes all
+	in one place. The alternative would be scanning through our entire program 
+	for anywhere we move forward, and updating each segment.
+
+	Thus, even if move_forward() and turn() don't work, we can pretend
+	that they do work as they're supposed to. That way, when we do have the
+	robot and can successfully implement and test the move forward functions,
+	updating our entire program is very easy.
 	"""
 
 def move_to_chest_from_start_one():
