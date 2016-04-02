@@ -222,13 +222,13 @@ def l_feet_to_inches(num_feet):
 	"""Converts feet in to inches. Notice that we don't always have to name
 	our functions f, and their arguments x and y
 
-	>>> feet_to_inches(2)
+	>>> l_feet_to_inches(2)
 	24
 
-	>>> feet_to_inches(5)
+	>>> l_feet_to_inches(5)
 	60
 
-	>>> feet_to_inches(3)
+	>>> l_feet_to_inches(3)
 	36
 
 	-- You would be writing in the following stuff after the quotations --
@@ -238,43 +238,43 @@ def l_feet_to_inches(num_feet):
 def k_triangle_length(side1, side2):
 	"""Calculates the longest side of a right triangle, given the other lengths
 
-	>>> triangle_length(3,4)
+	>>> k_triangle_length(3,4)
 	5.0
 
-	>>> triangle_length(6,8)
+	>>> k_triangle_length(6,8)
 	10.0
 	"""
 	return (side1**2 + side2**2)**.5
 
 def j_minutes_to_seconds(num_minutes):
 	"""Converts minutes into seconds
-	>>> minutes_to_seconds(1)
+	>>> j_minutes_to_seconds(1)
 	60
 
-	>>> minutes_to_seconds(3)
+	>>> j_minutes_to_seconds(3)
 	180
 
-	>>> minutes_to_seconds(5)
+	>>> j_minutes_to_seconds(5)
 	300
 	"""
 	"ERASE THIS LINE AND REPLACE WITH YOURS"
 
 def i_area_of_rectangle(side1, side2):
 	"""Calculates area of a rectangle given side lengths
-	>>> area_of_rectangle(3,4)
+	>>> i_area_of_rectangle(3,4)
 	12
-	>>> area_of_rectangle(5,3)
+	>>> i_area_of_rectangle(5,3)
 	15
-	>>> area_of_rectangle(100,2)
+	>>> i_area_of_rectangle(100,2)
 	200
 	"""
 	"ERASE THIS LINE AND REPLACE WITH YOURS"
 
 def h_total_cost_of_lunch(num_burgers):
 	"""Calculates cost of getting a given amount of burgers
-	>>> total_cost_of_lunch(1)
+	>>> h_total_cost_of_lunch(1)
 	5
-	>>> total_cost_of_lunch(3)
+	>>> h_total_cost_of_lunch(3)
 	15
 	"""
 	burger_cost = 5
@@ -298,11 +298,11 @@ def h_total_cost_of_lunch(num_burgers):
 
 def g_worthy_of_the_sword(name):
 	"""Determines if a person is worthy of the sword
-	>>> worthy_of_the_sword("Merlin")
+	>>> g_worthy_of_the_sword("Merlin")
 	False
-	>>> worthy_of_the_sword("Elvis")
+	>>> g_worthy_of_the_sword("Elvis")
 	False
-	>>> worthy_of_the_sword("King Arthur")
+	>>> g_worthy_of_the_sword("King Arthur")
 	True
 	"""
 	if name == "King Arthur":
@@ -312,29 +312,29 @@ def g_worthy_of_the_sword(name):
 
 def f_num_sides(shape):
 	"""Returns the number of sides of given shape
-	>>> num_sides("square")
+	>>> f_num_sides("square")
 	4
-	>>> num_sides("rectangle")
+	>>> f_num_sides("rectangle")
 	4
-	>>> num_sides("triangle")
+	>>> f_num_sides("triangle")
 	3
 	"""
 	"REPLACE THIS LINE WITH YOUR CODE"
 
 def e_school(grade):
 	"""Returns the current school level as a string
-	>>> school(3)
-	"elementary"
-	>>> school(6)
-	"elementary"
-	>>> school(7)
-	"middle"
-	>>> school(8)
-	"middle"
-	>>> school(9)
-	"high"
-	>>> school(12)
-	"high"
+	>>> e_school(3)
+	'elementary'
+	>>> e_school(6)
+	'elementary'
+	>>> e_school(7)
+	'middle'
+	>>> e_school(8)
+	'middle'
+	>>> e_school(9)
+	'high'
+	>>> e_school(12)
+	'high'
 	"""
 	"REPLACE THIS LINE WITH YOUR CODE"
 
@@ -368,15 +368,15 @@ def d_print_up_to(top_num):
 	"""Counts up to a given number
 
 	This is an example I wrote for you, marked with my comments
-	>>> print_up_to(3)
+	>>> d_print_up_to(3)
 	0
 	1
 	2
 	3
-	>>> print_up_to(1)
+	>>> d_print_up_to(1)
 	0
 	1
-	>>> print_up_to(4)
+	>>> d_print_up_to(4)
 	0
 	1
 	2
@@ -406,18 +406,18 @@ def d_print_up_to(top_num):
 def c_print_multiples(num, times):
 	"""Prints multiples of num a certain number of times
 	Another example for you
-	>>> print_multiples(4, 3)
+	>>> c_print_multiples(4, 3)
 	0
 	4
 	8
-	>>> print_multiples(6, 4)
+	>>> c_print_multiples(6, 4)
 	0
 	6
 	12
 	18
-	>>> print_multiples(33, 0)
+	>>> c_print_multiples(33, 0)
 
-	>>> print_multiples(8, 1)
+	>>> c_print_multiples(8, 1)
 	0
 	"""
 	#Define a counter to count our reptitions
@@ -433,18 +433,18 @@ def c_print_multiples(num, times):
 
 def b_repeat(word, num_times):
 	"""Prints a string (word) a certain number of times
-	>>> repeat("beep", 3)
+	>>> b_repeat("beep", 3)
 	beep
 	beep
 	beep
 
-	>>> repeat("No this is Patrick", 2)
+	>>> b_repeat("No this is Patrick", 2)
 	No this is Patrick
 	No this is Patrick
 
-	>>> repeat("umm", 0)
+	>>> b_repeat("umm", 0)
 
-	>>> repeat("fills you with determination", 4)
+	>>> b_repeat("fills you with determination", 4)
 	fills you with determination
 	fills you with determination
 	fills you with determination
@@ -475,13 +475,13 @@ def a_print_if_odd(top):
 		more stuff			#repeated regardless of if condition
 	still stuff				#not repeated
 
-	>>> print_if_odd(5)
+	>>> a_print_if_odd(5)
 	1
 	3
 	5
-	>>> print_if_odd(1)
+	>>> a_print_if_odd(1)
 	1
-	>>> print_if_odd(4)
+	>>> a_print_if_odd(4)
 	1
 	3
 	"""
